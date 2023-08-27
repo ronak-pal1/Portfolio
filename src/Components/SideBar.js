@@ -21,26 +21,26 @@ const SideBar = () => {
         <>
             <div className="slideBarContainer" id="slideBarContainerId">
                 <div className="closeSignContainer">
-                    <img className="closeSign" src={closeIcon} onClick={closeSideBar}/>
+                    <img className="closeSign" src={closeIcon} alt="close icon" onClick={closeSideBar}/>
                 </div>
 
                 <div className="slideBar">
                     <div className="slideBarSocials">
                         <h1>Socials</h1>
                         <div>
-                            <img src={twitterLogo} />
-                            <img src={linkedinLogo} />
-                            <img src={githubLogo} />
-                            <img src={instagramLogo} />
-                            <img src={youtubeLogo} />
+                            <img src={twitterLogo} alt="twitter logo" />
+                            <img src={linkedinLogo} alt="linkedin logo" />
+                            <img src={githubLogo} alt="github logo" />
+                            <img src={instagramLogo} alt="instagram logo" />
+                            <img src={youtubeLogo} alt="youtube logo" />
                         </div>
                     </div>
 
                     <div className="slideBarProjects">
                         <h1>Projects</h1>
                         <div>
-                            <p><img src={cpuIcon} /><a href="">codecasing</a></p>
-                            <p><img src={cpuIcon} /><a href="">upschedule.com</a></p>
+                            <p><img src={cpuIcon} alt="cpu icon"/><a href="#">codecasing</a></p>
+                            <p><img src={cpuIcon} alt="cput icon" /><a href="#">upschedule.com</a></p>
                         </div>
                     </div>
                     <div className="slideBarContect">
