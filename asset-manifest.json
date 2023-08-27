@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.58f8295d.css",
+    "main.js": "/Portfolio/static/js/main.47561934.js",
+    "static/media/navbar-logo.png": "/Portfolio/static/media/navbar-logo.e485ab17d07fbbc6f021.png",
+    "static/media/wires-image.png": "/Portfolio/static/media/wires-image.be7b4df27dc9b558cafb.png",
+    "static/media/icons8-instagram-240.png": "/Portfolio/static/media/icons8-instagram-240.d6ff2eebf48664872533.png",
+    "static/media/cpu-icon.png": "/Portfolio/static/media/cpu-icon.d744d8ee57a3c855b319.png",
+    "index.html": "/Portfolio/index.html",
+    "main.58f8295d.css.map": "/Portfolio/static/css/main.58f8295d.css.map",
+    "main.47561934.js.map": "/Portfolio/static/js/main.47561934.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58f8295d.css",
+    "static/js/main.47561934.js"
+  ]
+}
