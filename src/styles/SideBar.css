@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+.slideBarContainer{
+    width: 0px;
+    height: 100vh;
+    background-color: #050505;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.slideBar{
+    width: 100%;
+}
+
+.slideBar div{
+    margin-bottom: 50px;
+}
+
+.slideBarSocials h1, .slideBarProjects h1{
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+}
+
+.slideBarSocials div{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.slideBarSocials div img{
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    display: inline-block;
+}
+
+.slideBarProjects div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auot;
+    margin-top: 20px;
+}
+
+.slideBarProjects div p{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.slideBarProjects div p img{
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); 
+}
+
+.slideBarProjects div p a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slideBarContect{
+    width: 100%;
+}
+
+.slideBarContect a div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.closeSignContainer{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closeSign{
+    width: 30px;
+    height: 30px;  
+    filter: brightness(0) invert(1); 
+    cursor: pointer;
+}
