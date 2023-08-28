@@ -1,6 +1,10 @@
 import Navbar from "./Components/Navbar";
 import { SideBar } from "./Components/SideBar";
-import introImage from "./assests/intro-image.png";
+import SkillItem from "./Components/SkillItem";
+import SkillSection from "./Components/SkillSection";
+import introImage from "./assests/bannerImage.png";
+import bannerHTML from "./assests/bannerHTML.png";
+
 import "./styles/App.css"; 
 
 const App = ()  => {
@@ -35,7 +39,39 @@ const App = ()  => {
       </div>
 
       <div className="skillsContainer">
-          
+          <SkillSection name="Front End"> 
+            <SkillItem url={ bannerHTML } skillName="HTML5"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="CSS"></SkillItem> 
+            <SkillItem url={ bannerHTML } skillName="React.js"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="Tailwind CSS"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="Angular.js"></SkillItem>
+          </SkillSection>
+
+          <SkillSection name="Back End"> 
+            <SkillItem url={ bannerHTML } skillName="JavaScript"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="Node.js"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="Express.js"></SkillItem>
+          </SkillSection>
+
+          <SkillSection name="Database"> 
+            <SkillItem url={ bannerHTML } skillName="MongoDB"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="MySQL"></SkillItem>
+          </SkillSection>
+
+          <SkillSection name="Languages"> 
+            <SkillItem url={ bannerHTML } skillName="Java"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="C"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="C++"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="Python"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="Kotlin"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="Go"></SkillItem>
+          </SkillSection>
+
+          <SkillSection name="DevOps"> 
+            <SkillItem url={ bannerHTML } skillName="Docker"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="Kubernetes"></SkillItem>
+            <SkillItem url={ bannerHTML } skillName="Git"></SkillItem>
+          </SkillSection>
       </div>
     </>
   );

@@ -45,7 +45,7 @@
 }
 
 .introContainerImage img{
-    width: 270px;
+    width: 320px;
 } 
 
 .introContainerAbout h1{
@@ -85,6 +85,12 @@
 }
 
 
+.skillsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Responsiveness */
 @media (max-width: 1312px)
