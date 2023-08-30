@@ -28,23 +28,23 @@ const SideBar = () => {
                     <div className="slideBarSocials">
                         <h1>Socials</h1>
                         <div>
-                            <a href="https://www.twitter.com/ronak_pal1" target="_blank"><img src={twitterLogo} alt="twitter logo" /></a>
-                            <a href="https://www.linkedin.com/in/ronak-pal1" target="_blank"><img src={linkedinLogo} alt="linkedin logo" /></a>
-                            <a href="https://www.github.com/ronak-pal1" target="_blank"><img src={githubLogo} alt="github logo" /></a>
-                            <a href="https://www.instagam.com/ronak_pal1" target="_blank"><img src={instagramLogo} alt="instagram logo" /></a>
-                            <a href="https://www.youtube.com/@CodaGo" target="_blank"><img src={youtubeLogo} alt="youtube logo" /></a>
+                            <a href="https://www.twitter.com/ronak_pal1" target="_blank" rel="noreferrer"><img src={twitterLogo} alt="twitter logo" /></a>
+                            <a href="https://www.linkedin.com/in/ronak-pal1" target="_blank" rel="noreferrer"><img src={linkedinLogo} alt="linkedin logo" /></a>
+                            <a href="https://www.github.com/ronak-pal1" target="_blank" rel="noreferrer"><img src={githubLogo} alt="github logo" /></a>
+                            <a href="https://www.instagam.com/ronak_pal1" target="_blank" rel="noreferrer"><img src={instagramLogo} alt="instagram logo" /></a>
+                            <a href="https://www.youtube.com/@CodaGo" target="_blank" rel="noreferrer"><img src={youtubeLogo} alt="youtube logo" /></a>
                         </div>
                     </div>
 
                     <div className="slideBarProjects">
                         <h1>Projects</h1>
                         <div>
-                            <p><img src={cpuIcon} alt="cpu icon"/><a href="#">codecasing</a></p>
-                            <p><img src={cpuIcon} alt="cput icon" /><a href="#">upschedule.com</a></p>
+                            <p><img src={cpuIcon} alt="cpu icon"/><a href="https://codago.hashnode.dev/">codecasing</a></p>
+                            <p><img src={cpuIcon} alt="cput icon" /><a href="https://codago.hashnode.dev/">upschedule.com</a></p>
                         </div>
                     </div>
                     <div className="slideBarContect">
-                        <a href="#" className="contactButtonLink"><div>Contact</div></a>
+                        <a href="https://codago.hashnode.dev/" className="contactButtonLinkSidebar"><div>Contact</div></a>
                     </div>
                 </div>
             </div>

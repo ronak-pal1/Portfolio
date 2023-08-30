@@ -4,7 +4,7 @@
     width: 0px;
     height: 100vh;
     background-color: #050505;
-    z-index: 1;
+    z-index: 300;
     top: 0;
     left: 0;
     position: fixed;
@@ -79,7 +79,19 @@
     margin-right: auto;
 }
 
+.contactButtonLinkSidebar{
+    text-decoration: none;
+}
 
+.contactButtonLinkSidebar div{
+    padding: 10px 25px;
+    width: 120px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: black;
+    background-color: #e9f18e;
+    font-family: 'Poppins', sans-serif;
+}
 
 
 .closeSignContainer{

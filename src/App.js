@@ -1,3 +1,4 @@
+import React, {useEffect} from 'react';
 import Navbar from "./Components/Navbar";
 import { SideBar } from "./Components/SideBar";
 import SkillItem from "./Components/SkillItem";
@@ -25,20 +26,27 @@ import bannerKubernetes from "./assests/banners/bannerKubernetes.png";
 import bannerGit from "./assests/banners/bannerGit.png";
 import bannerGo from "./assests/banners/bannerGo.png";
 import "./styles/App.css"; 
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = ()  => {
+
+  useEffect(() => {
+    AOS.init({duration:2000});
+  }, []);
+
   return (
     <>
       <SideBar />
       <Navbar />
 
       <div className="punchLinesContainer">
-        <p className="punchLine-1 punchLines">
+        <p className="punchLine-1 punchLines" data-aos="zoom-in">
             Crafting Tomorrow's Solutions in Lines of Code
         </p>
       </div>
 
-      <div className="introContainer">
+      <div className="introContainer" data-aos="zoom-in">
         <div className="introContainerAbout">
             <h1>Software Developer</h1>
             <p className="introContainerAboutName">Ronak Paul, 19y</p>
@@ -53,9 +61,10 @@ const App = ()  => {
             </p>
         </div>
         <div className="introContainerImage">
-            <img src= { introImage } />
+            <img src= { introImage } alt="introPic"/>
         </div>
       </div>
+
 
       <div className="skillsContainer">
           <SkillSection name="Front End"> 
@@ -66,20 +75,20 @@ const App = ()  => {
             <SkillItem url={ bannerAngular } skillName="Angular.js"></SkillItem>
           </SkillSection>
 
-          <SkillSection name="Back End"> 
+          <SkillSection name="Back End" className="ss skill2"> 
             <SkillItem url={ bannerJavascript } skillName="JavaScript"></SkillItem>
             <SkillItem url={ bannerTypescript } skillName="TypeScript"></SkillItem>
             <SkillItem url={ bannerNodejs } skillName="Node.js"></SkillItem>
             <SkillItem url={ bannerExpressjs } skillName="Express.js"></SkillItem>
           </SkillSection>
 
-          <SkillSection name="Database"> 
+          <SkillSection name="Database" className="ss skill3"> 
             <SkillItem url={ bannerMongodb } skillName="MongoDB"></SkillItem>
             <SkillItem url={ bannerMySQL } skillName="MySQL"></SkillItem>
             <SkillItem url={ bannerFirebase } skillName="Firebase"></SkillItem>
           </SkillSection>
 
-          <SkillSection name="Languages"> 
+          <SkillSection name="Languages" className="ss skill4"> 
             <SkillItem url={ bannerJava } skillName="Java"></SkillItem>
             <SkillItem url={ bannerC } skillName="C"></SkillItem>
             <SkillItem url={ bannerCpp } skillName="C++"></SkillItem>
@@ -88,10 +97,10 @@ const App = ()  => {
             <SkillItem url={ bannerGo } skillName="Go"></SkillItem>
           </SkillSection>
 
-          <SkillSection name="DevOps"> 
+          <SkillSection name="DevOps" className="ss Skill5"> 
             <SkillItem url={ bannerDocker } skillName="Docker"></SkillItem>
             <SkillItem url={ bannerKubernetes } skillName="Kubernetes"></SkillItem>
-            <SkillItem url={ bannerGit } skillName="Git"></SkillItem>
+            <SkillItem url={ bannerGit } skillName="Git & GitHub"></SkillItem>
           </SkillSection>
       </div>
     </>

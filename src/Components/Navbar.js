@@ -16,13 +16,15 @@ const Navbar = () => {
 
         <nav>
             <ul className="navLinks">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Videos</a></li>
+                <li><a href="https://codago.hashnode.dev/">About</a></li>
+                <li><a href="https://codago.hashnode.dev/">Videos</a></li>
                 <li><a href="https://codago.hashnode.dev/">Blogs</a></li>
-                <li><a href="#">Courses</a></li>
+                <li><a href="https://codago.hashnode.dev/">Courses</a></li>
             </ul>
         </nav>
-        <a href="#" className="contactButtonLink"><div>Contact</div></a>
+
+        <a href="https://codago.hashnode.dev/" className="contactButtonLinkNavbar"><div>Contact</div></a>
+
         <div className="wiresContainer">
         </div>
     </header>
