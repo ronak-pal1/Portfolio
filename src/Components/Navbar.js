@@ -18,7 +18,7 @@ const Navbar = () => {
             <ul className="navLinks">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Videos</a></li>
-                <li><a href="#">Blogs</a></li>
+                <li><a href="https://codago.hashnode.dev/">Blogs</a></li>
                 <li><a href="#">Courses</a></li>
             </ul>
         </nav>

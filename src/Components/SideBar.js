@@ -28,11 +28,11 @@ const SideBar = () => {
                     <div className="slideBarSocials">
                         <h1>Socials</h1>
                         <div>
-                            <img src={twitterLogo} alt="twitter logo" />
-                            <img src={linkedinLogo} alt="linkedin logo" />
-                            <img src={githubLogo} alt="github logo" />
-                            <img src={instagramLogo} alt="instagram logo" />
-                            <img src={youtubeLogo} alt="youtube logo" />
+                            <a href="https://www.twitter.com/ronak_pal1" target="_blank"><img src={twitterLogo} alt="twitter logo" /></a>
+                            <a href="https://www.linkedin.com/in/ronak-pal1" target="_blank"><img src={linkedinLogo} alt="linkedin logo" /></a>
+                            <a href="https://www.github.com/ronak-pal1" target="_blank"><img src={githubLogo} alt="github logo" /></a>
+                            <a href="https://www.instagam.com/ronak_pal1" target="_blank"><img src={instagramLogo} alt="instagram logo" /></a>
+                            <a href="https://www.youtube.com/@CodaGo" target="_blank"><img src={youtubeLogo} alt="youtube logo" /></a>
                         </div>
                     </div>
 
