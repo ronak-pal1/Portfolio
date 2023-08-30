@@ -1,18 +1,33 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.4e53519e.css",
-    "main.js": "/Portfolio/static/js/main.011fde1b.js",
+    "main.css": "/Portfolio/static/css/main.8613d105.css",
+    "main.js": "/Portfolio/static/js/main.a49bbdd8.js",
     "static/media/navbar-logo.png": "/Portfolio/static/media/navbar-logo.e485ab17d07fbbc6f021.png",
     "static/media/wires-image.png": "/Portfolio/static/media/wires-image.be7b4df27dc9b558cafb.png",
+    "static/media/bannerGo.png": "/Portfolio/static/media/bannerGo.4c8229120bf37ed9606a.png",
     "static/media/bannerImage.png": "/Portfolio/static/media/bannerImage.6e1d5048aab3dbe74a67.png",
+    "static/media/bannerMySQL.png": "/Portfolio/static/media/bannerMySQL.c2f897e9ddcbd2c54817.png",
+    "static/media/bannerPython.png": "/Portfolio/static/media/bannerPython.99f6cdf131e033972656.png",
+    "static/media/bannerJavascript.png": "/Portfolio/static/media/bannerJavascript.88c1526df39cb55a6d57.png",
+    "static/media/bannerC.png": "/Portfolio/static/media/bannerC.ed5052fcd611fee61cc6.png",
+    "static/media/bannerTailwind.png": "/Portfolio/static/media/bannerTailwind.05e6cc552325b822eefe.png",
+    "static/media/bannerGit.png": "/Portfolio/static/media/bannerGit.f5f57209c8ac36e4674c.png",
+    "static/media/bannerCSS.png": "/Portfolio/static/media/bannerCSS.63a24b0ea15b6db3f267.png",
+    "static/media/bannerExpressjs.png": "/Portfolio/static/media/bannerExpressjs.f651e4d2fb4437a8f743.png",
+    "static/media/bannerJava.png": "/Portfolio/static/media/bannerJava.adf1b2945c38e4f9b7e5.png",
     "static/media/icons8-instagram-240.png": "/Portfolio/static/media/icons8-instagram-240.d6ff2eebf48664872533.png",
     "static/media/cpu-icon.png": "/Portfolio/static/media/cpu-icon.d744d8ee57a3c855b319.png",
+    "static/media/bannerReact.png": "/Portfolio/static/media/bannerReact.aa6e39372380701d73f2.png",
+    "static/media/bannerFirebase.png": "/Portfolio/static/media/bannerFirebase.eca21c8c9792470c71f3.png",
+    "static/media/bannerNodejs.png": "/Portfolio/static/media/bannerNodejs.4906d9c49c7c88c691f8.png",
+    "static/media/bannerTypescript.png": "/Portfolio/static/media/bannerTypescript.90fbe14d99a7a6cf7e75.png",
+    "static/media/bannerDocker.png": "/Portfolio/static/media/bannerDocker.ce2f5bd9fbbc4a0d00e6.png",
     "index.html": "/Portfolio/index.html",
-    "main.4e53519e.css.map": "/Portfolio/static/css/main.4e53519e.css.map",
-    "main.011fde1b.js.map": "/Portfolio/static/js/main.011fde1b.js.map"
+    "main.8613d105.css.map": "/Portfolio/static/css/main.8613d105.css.map",
+    "main.a49bbdd8.js.map": "/Portfolio/static/js/main.a49bbdd8.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e53519e.css",
-    "static/js/main.011fde1b.js"
+    "static/css/main.8613d105.css",
+    "static/js/main.a49bbdd8.js"
   ]
 }
