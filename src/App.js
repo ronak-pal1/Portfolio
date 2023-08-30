@@ -3,8 +3,27 @@ import { SideBar } from "./Components/SideBar";
 import SkillItem from "./Components/SkillItem";
 import SkillSection from "./Components/SkillSection";
 import introImage from "./assests/bannerImage.png";
-import bannerHTML from "./assests/bannerHTML.png";
-
+import bannerHTML from "./assests/banners/bannerHTML.png";
+import bannerCSS from "./assests/banners/bannerCSS.png";
+import bannerReact from "./assests/banners/bannerReact.png";
+import bannerTailwind from "./assests/banners/bannerTailwind.png";
+import bannerAngular from "./assests/banners/bannerAngular.png";
+import bannerJavascript from "./assests/banners/bannerJavascript.png";
+import bannerTypescript from "./assests/banners/bannerTypescript.png";
+import bannerNodejs from "./assests/banners/bannerNodejs.png";
+import bannerExpressjs from "./assests/banners/bannerExpressjs.png";
+import bannerMongodb from "./assests/banners/bannerMongoDB.png";
+import bannerMySQL from "./assests/banners/bannerMySQL.png";
+import bannerFirebase from "./assests/banners/bannerFirebase.png";
+import bannerJava from "./assests/banners/bannerJava.png";
+import bannerC from "./assests/banners/bannerC.png";
+import bannerCpp from "./assests/banners/bannerCPP.png";
+import bannerPython from "./assests/banners/bannerPython.png";
+import bannerKotlin from "./assests/banners/bannerKotlin.png";
+import bannerDocker from "./assests/banners/bannerDocker.png";
+import bannerKubernetes from "./assests/banners/bannerKubernetes.png";
+import bannerGit from "./assests/banners/bannerGit.png";
+import bannerGo from "./assests/banners/bannerGo.png";
 import "./styles/App.css"; 
 
 const App = ()  => {
@@ -41,36 +60,38 @@ const App = ()  => {
       <div className="skillsContainer">
           <SkillSection name="Front End"> 
             <SkillItem url={ bannerHTML } skillName="HTML5"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="CSS"></SkillItem> 
-            <SkillItem url={ bannerHTML } skillName="React.js"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="Tailwind CSS"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="Angular.js"></SkillItem>
+            <SkillItem url={ bannerCSS } skillName="CSS"></SkillItem> 
+            <SkillItem url={ bannerReact } skillName="React.js"></SkillItem>
+            <SkillItem url={ bannerTailwind } skillName="Tailwind CSS"></SkillItem>
+            <SkillItem url={ bannerAngular } skillName="Angular.js"></SkillItem>
           </SkillSection>
 
           <SkillSection name="Back End"> 
-            <SkillItem url={ bannerHTML } skillName="JavaScript"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="Node.js"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="Express.js"></SkillItem>
+            <SkillItem url={ bannerJavascript } skillName="JavaScript"></SkillItem>
+            <SkillItem url={ bannerTypescript } skillName="TypeScript"></SkillItem>
+            <SkillItem url={ bannerNodejs } skillName="Node.js"></SkillItem>
+            <SkillItem url={ bannerExpressjs } skillName="Express.js"></SkillItem>
           </SkillSection>
 
           <SkillSection name="Database"> 
-            <SkillItem url={ bannerHTML } skillName="MongoDB"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="MySQL"></SkillItem>
+            <SkillItem url={ bannerMongodb } skillName="MongoDB"></SkillItem>
+            <SkillItem url={ bannerMySQL } skillName="MySQL"></SkillItem>
+            <SkillItem url={ bannerFirebase } skillName="Firebase"></SkillItem>
           </SkillSection>
 
           <SkillSection name="Languages"> 
-            <SkillItem url={ bannerHTML } skillName="Java"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="C"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="C++"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="Python"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="Kotlin"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="Go"></SkillItem>
+            <SkillItem url={ bannerJava } skillName="Java"></SkillItem>
+            <SkillItem url={ bannerC } skillName="C"></SkillItem>
+            <SkillItem url={ bannerCpp } skillName="C++"></SkillItem>
+            <SkillItem url={ bannerPython } skillName="Python"></SkillItem>
+            <SkillItem url={ bannerKotlin } skillName="Kotlin"></SkillItem>
+            <SkillItem url={ bannerGo } skillName="Go"></SkillItem>
           </SkillSection>
 
           <SkillSection name="DevOps"> 
-            <SkillItem url={ bannerHTML } skillName="Docker"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="Kubernetes"></SkillItem>
-            <SkillItem url={ bannerHTML } skillName="Git"></SkillItem>
+            <SkillItem url={ bannerDocker } skillName="Docker"></SkillItem>
+            <SkillItem url={ bannerKubernetes } skillName="Kubernetes"></SkillItem>
+            <SkillItem url={ bannerGit } skillName="Git"></SkillItem>
           </SkillSection>
       </div>
     </>
