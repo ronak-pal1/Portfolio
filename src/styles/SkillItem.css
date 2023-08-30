@@ -13,12 +13,13 @@
     width: 100%;
     height: 120px;
     display: flex;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .col div img{
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 7px;
 }
 
 .col h2{
@@ -60,7 +61,7 @@
 
 @media (max-width: 611px){
     .col{
-        width: 120px;
+        width: 130px;
     }
 
     .col div{
@@ -72,10 +73,10 @@
     }
 }
 
-@media (max-width: 378px)
+@media (max-width: 360px)
 {
     .col{
-        width: 100px;
+        width: 115px;
     }
 
     .col div{
@@ -85,4 +86,4 @@
     .col h2{
         font-size: 11px;
     }
-}
+} 
