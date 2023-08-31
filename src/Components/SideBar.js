@@ -31,7 +31,7 @@ const SideBar = () => {
                             <a href="https://www.twitter.com/ronak_pal1" target="_blank" rel="noreferrer"><img src={twitterLogo} alt="twitter logo" /></a>
                             <a href="https://www.linkedin.com/in/ronak-pal1" target="_blank" rel="noreferrer"><img src={linkedinLogo} alt="linkedin logo" /></a>
                             <a href="https://www.github.com/ronak-pal1" target="_blank" rel="noreferrer"><img src={githubLogo} alt="github logo" /></a>
-                            <a href="https://www.instagam.com/ronak_pal1" target="_blank" rel="noreferrer"><img src={instagramLogo} alt="instagram logo" /></a>
+                            <a href="https://www.instagram.com/ronak_pal1" target="_blank" rel="noreferrer"><img src={instagramLogo} alt="instagram logo" /></a>
                             <a href="https://www.youtube.com/@CodaGo" target="_blank" rel="noreferrer"><img src={youtubeLogo} alt="youtube logo" /></a>
                         </div>
                     </div>
