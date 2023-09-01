@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Navbar from "./Components/Navbar";
 import { SideBar } from "./Components/SideBar";
 import SkillItem from "./Components/SkillItem";
@@ -28,81 +28,107 @@ import bannerGo from "./assests/banners/bannerGo.png";
 import "./styles/App.css"; 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import AboutPage from './AboutPage';
+import CoursesPage from './CoursesPage';
+import YoutubeSection from './Components/YoutubeSection';
+import Footer from './Components/Footer';
+import ContactBox from './Components/ContactBox';
 
 const App = ()  => {
+  const [current, setCurrent] = useState("Home");
+  const [contactOn, setContact] = useState({
+    isOn: false,
+    blurGlassDisplay: "none"
+  });
 
   useEffect(() => {
     AOS.init({duration:2000});
   }, []);
 
   return (
-    <>
-      <SideBar />
-      <Navbar />
+    <> 
 
-      <div className="punchLinesContainer">
-        <p className="punchLine-1 punchLines" data-aos="zoom-in">
-            Crafting Tomorrow's Solutions in Lines of Code
-        </p>
-      </div>
+      <div className='blurGlass' style={{display: contactOn.blurGlassDisplay}}></div>
+      { contactOn.isOn && <ContactBox hideContact={() => setContact({isOn: false, blurGlassDisplay: "none"})}/>}
 
-      <div className="introContainer" data-aos="zoom-in">
-        <div className="introContainerAbout">
-            <h1>Software Developer</h1>
-            <p className="introContainerAboutName">Ronak Paul, 19y</p>
-            <p className="introContainerAboutTalkTopic">Talks about #devops, #community, #education, #developers</p>
-            <p className="tags">
-              <p>Full stack developer</p>
-              <p>Opensource Contributor</p>
-              <p>AI/ML</p>
-              <p>Cloud</p>
-              <p>DevOps Enthusiast</p>
-              <p>Content Creator</p>
+      <SideBar showContact={() => setContact({isOn: true, blurGlassDisplay: "block"})}/>
+      <Navbar showAbout={() => setCurrent("About")}  showHome={() => setCurrent("Home")} showCourses={() => setCurrent("Courses")} showContact={() => setContact({isOn: true, blurGlassDisplay: "block"})}/>
+
+      { current === "Home" &&
+        <>
+          <div className="punchLinesContainer">
+            <p className="punchLine-1 punchLines" data-aos="zoom-in">
+                Crafting Tomorrow's Solutions in Lines of Code
             </p>
-        </div>
-        <div className="introContainerImage">
-            <img src= { introImage } alt="introPic"/>
-        </div>
-      </div>
+          </div>
+        
+          <div className="introContainer" data-aos="zoom-in">
+            <div className="introContainerAbout">
+                <h1>Software Developer</h1>
+                <p className="introContainerAboutName">Ronak Paul, 19y</p>
+                <p className="introContainerAboutTalkTopic">Talks about #devops, #community, #education, #developers</p>
+                <p className="tags">
+                  <p>Full stack developer</p>
+                  <p>Opensource Contributor</p>
+                  <p>AI/ML</p>
+                  <p>Cloud</p>
+                  <p>DevOps Enthusiast</p>
+                  <p>Content Creator</p>
+                </p>
+            </div>
+            <div className="introContainerImage">
+                <img src= { introImage } alt="introPic"/>
+            </div>
+          </div>
+          
 
+          <div className="skillsContainer">
+              <SkillSection name="Front End"> 
+                <SkillItem url={ bannerHTML } skillName="HTML5"></SkillItem>
+                <SkillItem url={ bannerCSS } skillName="CSS"></SkillItem> 
+                <SkillItem url={ bannerReact } skillName="React.js"></SkillItem>
+                <SkillItem url={ bannerTailwind } skillName="Tailwind CSS"></SkillItem>
+                <SkillItem url={ bannerAngular } skillName="Angular.js"></SkillItem>
+              </SkillSection>
 
-      <div className="skillsContainer">
-          <SkillSection name="Front End"> 
-            <SkillItem url={ bannerHTML } skillName="HTML5"></SkillItem>
-            <SkillItem url={ bannerCSS } skillName="CSS"></SkillItem> 
-            <SkillItem url={ bannerReact } skillName="React.js"></SkillItem>
-            <SkillItem url={ bannerTailwind } skillName="Tailwind CSS"></SkillItem>
-            <SkillItem url={ bannerAngular } skillName="Angular.js"></SkillItem>
-          </SkillSection>
+              <SkillSection name="Back End"> 
+                <SkillItem url={ bannerJavascript } skillName="JavaScript"></SkillItem>
+                <SkillItem url={ bannerTypescript } skillName="TypeScript"></SkillItem>
+                <SkillItem url={ bannerNodejs } skillName="Node.js"></SkillItem>
+                <SkillItem url={ bannerExpressjs } skillName="Express.js"></SkillItem>
+              </SkillSection>
 
-          <SkillSection name="Back End" className="ss skill2"> 
-            <SkillItem url={ bannerJavascript } skillName="JavaScript"></SkillItem>
-            <SkillItem url={ bannerTypescript } skillName="TypeScript"></SkillItem>
-            <SkillItem url={ bannerNodejs } skillName="Node.js"></SkillItem>
-            <SkillItem url={ bannerExpressjs } skillName="Express.js"></SkillItem>
-          </SkillSection>
+              <SkillSection name="Database"> 
+                <SkillItem url={ bannerMongodb } skillName="MongoDB"></SkillItem>
+                <SkillItem url={ bannerMySQL } skillName="MySQL"></SkillItem>
+                <SkillItem url={ bannerFirebase } skillName="Firebase"></SkillItem>
+              </SkillSection>
 
-          <SkillSection name="Database" className="ss skill3"> 
-            <SkillItem url={ bannerMongodb } skillName="MongoDB"></SkillItem>
-            <SkillItem url={ bannerMySQL } skillName="MySQL"></SkillItem>
-            <SkillItem url={ bannerFirebase } skillName="Firebase"></SkillItem>
-          </SkillSection>
+              <SkillSection name="Languages"> 
+                <SkillItem url={ bannerJava } skillName="Java"></SkillItem>
+                <SkillItem url={ bannerC } skillName="C"></SkillItem>
+                <SkillItem url={ bannerCpp } skillName="C++"></SkillItem>
+                <SkillItem url={ bannerPython } skillName="Python"></SkillItem>
+                <SkillItem url={ bannerKotlin } skillName="Kotlin"></SkillItem>
+                <SkillItem url={ bannerGo } skillName="Go"></SkillItem>
+              </SkillSection>
 
-          <SkillSection name="Languages" className="ss skill4"> 
-            <SkillItem url={ bannerJava } skillName="Java"></SkillItem>
-            <SkillItem url={ bannerC } skillName="C"></SkillItem>
-            <SkillItem url={ bannerCpp } skillName="C++"></SkillItem>
-            <SkillItem url={ bannerPython } skillName="Python"></SkillItem>
-            <SkillItem url={ bannerKotlin } skillName="Kotlin"></SkillItem>
-            <SkillItem url={ bannerGo } skillName="Go"></SkillItem>
-          </SkillSection>
+              <SkillSection name="DevOps"> 
+                <SkillItem url={ bannerDocker } skillName="Docker"></SkillItem>
+                <SkillItem url={ bannerKubernetes } skillName="Kubernetes"></SkillItem>
+                <SkillItem url={ bannerGit } skillName="Git & GitHub"></SkillItem>
+              </SkillSection>
+          </div>
 
-          <SkillSection name="DevOps" className="ss Skill5"> 
-            <SkillItem url={ bannerDocker } skillName="Docker"></SkillItem>
-            <SkillItem url={ bannerKubernetes } skillName="Kubernetes"></SkillItem>
-            <SkillItem url={ bannerGit } skillName="Git & GitHub"></SkillItem>
-          </SkillSection>
-      </div>
+          <YoutubeSection />
+        </>
+      }
+
+      { current === "About" && <AboutPage/>}
+
+      { current === "Courses" && <CoursesPage/>}
+
+      <Footer />
     </>
   );
 }

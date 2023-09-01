@@ -16,7 +16,7 @@ const closeSideBar = () => {
     document.getElementById("slideBarContainerId").style.width="0px";
 }
 
-const SideBar = () => {
+const SideBar = (props) => {
     return (
         <>
             <div className="slideBarContainer" id="slideBarContainerId">
@@ -43,8 +43,9 @@ const SideBar = () => {
                             <p><img src={cpuIcon} alt="cput icon" /><a href="https://codago.hashnode.dev/">upschedule.com</a></p>
                         </div>
                     </div>
+
                     <div className="slideBarContect">
-                        <a href="https://codago.hashnode.dev/" className="contactButtonLinkSidebar"><div>Contact</div></a>
+                        <button className="contactButtonSidebar" onClick={props.showContact}>Contact</button>
                     </div>
                 </div>
             </div>

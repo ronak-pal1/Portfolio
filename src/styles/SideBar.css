@@ -74,16 +74,10 @@
     width: 100%;
 }
 
-.slideBarContect a div{
+.contactButtonSidebar{
+    display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.contactButtonLinkSidebar{
-    text-decoration: none;
-}
-
-.contactButtonLinkSidebar div{
     padding: 10px 25px;
     width: 120px;
     border-radius: 30px;
@@ -91,6 +85,8 @@
     color: black;
     background-color: #e9f18e;
     font-family: 'Poppins', sans-serif;
+    border: none;
+    cursor: pointer;
 }
 
 
