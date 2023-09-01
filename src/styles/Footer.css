@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+
+footer{
+    width: 100%;
+    height: 130px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+}
+
+footer > p{
+    color: #fff;
+    padding: 10px;
+}
+
+footer > .qoute{
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 3px;
+}
+
+footer > .signature{
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 50px;
+}
