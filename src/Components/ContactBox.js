@@ -16,8 +16,8 @@ const ContactBox = (props) => {
                     <a href="mailto:ronakpaul882@gmail.com?body=Write your message here" target="_blank" rel="noreferrer" className="emailButton">Send Mail</a>
 
                     <div className="socialIcons">
-                        <a href="https://discordapp.com/users/487664802383265792" rel="noreferrer" target="_blank"><img src={discordIcon} /></a>
-                        <a href="https://newworkspace-eym5478.slack.com/team/U04R09N1FHV" rel="noreferrer" target="_blank"><img src={slackIcon} /></a>
+                        <a href="https://discordapp.com/users/487664802383265792" rel="noreferrer" target="_blank"><img src={discordIcon} alt="discord"/></a>
+                        <a href="https://newworkspace-eym5478.slack.com/team/U04R09N1FHV" rel="noreferrer" target="_blank"><img src={slackIcon} alt="slack"/></a>
                     </div>
                 </div>
             </div>

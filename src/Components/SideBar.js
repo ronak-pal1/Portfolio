@@ -39,8 +39,8 @@ const SideBar = (props) => {
                     <div className="slideBarProjects">
                         <h1>Projects</h1>
                         <div>
-                            <p><img src={cpuIcon} alt="cpu icon"/><a href="https://codago.hashnode.dev/">codecasing</a></p>
-                            <p><img src={cpuIcon} alt="cput icon" /><a href="https://codago.hashnode.dev/">upschedule.com</a></p>
+                            <p><img src={cpuIcon} alt="cpu icon"/><a href="https://ronak-pal1.github.io/CodeCasing/" rel="noreferrer">codecasing</a></p>
+                            <p><img src={cpuIcon} alt="cput icon" /><a href="#" rel="noreferrer">upschedule.com</a></p>
                         </div>
                     </div>
 
