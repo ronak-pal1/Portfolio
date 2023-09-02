@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+.aboutPage{
+    margin-top: 300px;
+}
+
+@media (max-width: 1100px)
+{
+    .aboutPage{
+        margin-top: 400px;
+    }
+}
