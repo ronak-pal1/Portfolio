@@ -29,7 +29,6 @@ import "./styles/App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import AboutPage from './AboutPage';
-import CoursesPage from './CoursesPage';
 import YoutubeSection from './Components/YoutubeSection';
 import Footer from './Components/Footer';
 import ContactBox from './Components/ContactBox';
@@ -126,7 +125,7 @@ const App = ()  => {
 
       { current === "About" && <AboutPage/>}
 
-      { current === "Courses" && <CoursesPage/>}
+      {/* { current === "Courses" && <CoursesPage/>} */}
 
       <Footer />
     </>
